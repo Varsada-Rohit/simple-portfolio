@@ -26,16 +26,18 @@ function NewProjectCard({
 }) {
   return (
     <div className="col-lg-6 p-5">
-      <img
-        src={img}
-        className={"mb-img " + imgClass || ""}
-        style={{
-          width: "100%",
-          height: "20rem",
-          objectFit: objectFit || "cover",
-          background: "#77889990",
-        }}
-      />
+      <div style={{ overflow: "hidden" }}>
+        <img
+          src={img}
+          className={"mb-img " + imgClass || ""}
+          style={{
+            width: "100%",
+            height: "20rem",
+            objectFit: objectFit || "cover",
+            background: "#77889990",
+          }}
+        />
+      </div>
 
       <div className="pt-2 project-name">{name}</div>
       <div className="d-flex mt-1 mb-2">

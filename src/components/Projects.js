@@ -40,6 +40,15 @@ function Projects() {
         codeLink={"https://github.com/Varsada-Rohit/iwinceramic.git"}
         demoLink={"https://iwinceramic.vercel.app/"}
       />
+      <NewProjectCard
+        name={"KRYPT"}
+        description={"A simple transaction record web app using blockchain"}
+        img={require("../assets/krypt.png")}
+        // objectFit={"contain"}
+        techUsed={["React Js", "Solidity", "Hardhat", "Tailwind"]}
+        codeLink={"https://github.com/Varsada-Rohit/KRYPT.git"}
+        demoLink={"https://krypt-jk04xjvls-varsada-rohit.vercel.app/"}
+      />
     </div>
   );
 }
