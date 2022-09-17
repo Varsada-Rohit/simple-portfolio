@@ -6,10 +6,15 @@ import Navbar from "./components/Navbar";
 import ProjectCard from "./components/ProjectCard";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
-    <>
+    <HelmetProvider>
+      <Helmet>
+        <title>Hello World</title>
+        <link rel="canonical" href="https://www.tacobell.com/" />
+      </Helmet>
       <div className="container">
         <div className="full-height">
           <Navbar />
@@ -36,7 +41,7 @@ function App() {
         <Resume />
       </div>
       <Footer />
-    </>
+    </HelmetProvider>
   );
 }
 
